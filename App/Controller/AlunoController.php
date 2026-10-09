@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Model\Aluno;
+
 class AlunoController
 {
     public static function cadastro()
@@ -11,6 +13,9 @@ class AlunoController
 
     public static function listar()
     {
-        echo "Listar alunos";
+        echo "Listar de alunos";
+
+        $aluno = new Aluno();
+        $aluno ->getAllRows();
     }
 }
