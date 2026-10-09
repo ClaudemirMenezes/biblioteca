@@ -1,14 +1,18 @@
-<?php
+<?php 
 
-// 1° O Diretório base
-// 2° Onde estão as views
+// 1° O diretório base do projeto
+
+// 2° Onde estão as views do projeto
+
 // 3° Acesso ao banco de dados
 
 
-define('BASE_DIR',  dirname(__FILE__, 2));
-define('VIEWS_DIR', BASE_DIR . '/View');
 
-$_ENV['db']['host'] = 'localhost:3306';
-$_ENV['db']['user'] = 'root';
-$_ENV['db']['pass'] = '';
-$_ENV['db']['database'] = 'biclioteca';
+define('BASE_DIR', dirname(__FILE__, 1)); 
+define('VIEW', BASE_DIR . '/Views');
+
+
+$_ENV['bd'] ['host'] = 'localhost:3306';
+$_ENV['bd'] ['user'] = 'root';
+$_ENV['bd'] ['pass'] = 'Sup0rt3seinfo';
+$_ENV['bd'] ['database'] = 'biblioteca';
