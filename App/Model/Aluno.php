@@ -4,26 +4,26 @@ namespace App\Model;
 
 use App\DAO\AlunoDAO;
 
-class Aluno
+final class Aluno
 {
   public  $id, $nome, $ra, $curso;
 
-  function save()  : Aluno      // Salvar um registro
+  public function save()  : Aluno      // Salvar um registro
   {
     return (new AlunoDAO())->save($this);
   }
 
-  function getById(int $id) : ?Aluno      // Pegar um registro pelo ID
+  public function getById(int $id) : ?Aluno      // Pegar um registro pelo ID
   {
     return (new AlunoDAO())->selectById($id);
   }
 
-  function getAllRows() : array          // Pegar todos os registros
+  public function getAllRows() : array          // Pegar todos os registros
   {
-    return [];
+    return (new AlunoDAO())->selectAll();
   }
 
-  function delete(int $id) : bool     // Deletar um registro
+  public function delete(int $id) : bool     // Deletar um registro
   {
     return (new AlunoDAO())->delete($id);
   }

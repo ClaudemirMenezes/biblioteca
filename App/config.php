@@ -9,10 +9,11 @@
 
 
 define('BASE_DIR', dirname(__FILE__, 1)); 
-define('VIEW', BASE_DIR . '/Views');
+define('VIEW', BASE_DIR . '/View');
 
 
-$_ENV['bd'] ['host'] = 'localhost:3306';
-$_ENV['bd'] ['user'] = 'root';
-$_ENV['bd'] ['pass'] = 'Sup0rt3seinfo';
-$_ENV['bd'] ['database'] = 'biblioteca';
+$_ENV['db']['host'] = 'localhost';
+$_ENV['db']['port'] = '3306';
+$_ENV['db']['user'] = 'root';
+$_ENV['db']['pass'] = 'Sup0rt3seinfo';
+$_ENV['db']['database'] = 'biblioteca';
